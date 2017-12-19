@@ -1,11 +1,13 @@
 ## Synopsis
 
-Simple bootloader for x86, it only prints its own binary content (little endian) on text terminal using int 10h AH=e0 (teletype output)
-it also calls int 15 to emulate system pause for delay betwen two messages. I think this is valid Quine or not ?
+Simple bootloader for x86, it only prints its own binary content (little endian) 
+on text terminal using int 10h AH=e0 (teletype output)
+it also calls int 15 to emulate system pause for delay betwen two messages. 
+I think this is valid Quine or not ?
 
 ## Installation
 
-compile it using NASM assembler in plain binary
+Compile it using NASM assembler in plain binary
 ```
 nasm -f bin bootloader.asm -o bootloader.bin
 ```
