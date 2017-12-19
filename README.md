@@ -18,5 +18,5 @@ dd if=bootloader.bin of=bootloader.img bs=512 conv=notrunc count=1
     
 Mount it on real floppy disk and insert it in floppy drive ( configure BIOS to boot from floppy disk)
 
-today, however, many PCs don't have a floppy drive so you can use some virtual machine  ( x86 emulatorBochs for example)
+Today, however, many PCs don't have a floppy drive so you can use some virtual machine  ( x86 emulator Bochs for example)
   
