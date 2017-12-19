@@ -5,17 +5,15 @@ it also calls int 15 to emulate system pause for delay betwen two messages. I th
 
 ## Installation
 
-    compile it using NASM assembler in plain binary
-
-        ```
-         nasm -f bin bootloader.asm -o bootloader.bin
-        ```
-    make floppy disk img from binary file, for example using dd tool http://www.chrysocome.net/dd
-
-        ```
-         dd if=bootloader.bin of=bootloader.img bs=512 conv=notrunc count=1 
-        ```
+compile it using NASM assembler in plain binary
+```
+nasm -f bin bootloader.asm -o bootloader.bin
+```
+make floppy disk img from binary file, for example using dd tool http://www.chrysocome.net/dd
+```
+dd if=bootloader.bin of=bootloader.img bs=512 conv=notrunc count=1 
+```
     
-    mount it on real floppy and insert it in floppy driver ( configure BIOS to boot from floppy disk)
-    today, however, many PCs don't have a floppy drive so you can use some virtual machine  ( x86 emulatorBochs for example)
+mount it on real floppy and insert it in floppy driver ( configure BIOS to boot from floppy disk)
+today, however, many PCs don't have a floppy drive so you can use some virtual machine  ( x86 emulatorBochs for example)
   
