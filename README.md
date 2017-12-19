@@ -16,6 +16,6 @@ Make floppy disk img from binary file, for example using dd tool http://www.chry
 dd if=bootloader.bin of=bootloader.img bs=512 conv=notrunc count=1 
 ```
     
-Mount it on real floppy and insert it in floppy driver ( configure BIOS to boot from floppy disk)
+Mount it on real floppy disk and insert it in floppy drive ( configure BIOS to boot from floppy disk)
 today, however, many PCs don't have a floppy drive so you can use some virtual machine  ( x86 emulatorBochs for example)
   
