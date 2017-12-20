@@ -15,7 +15,7 @@ mov dx, [ds:di]		;; moving content of first memory location in dx (7c00h)
 push dx				;; save dx in our stack
 xor  cx, cx        ;; for (int i = 0;
 
-;; out foor loop used to output 16 bit string (0 & 1)
+;; for loop used to output 16 bit string (0 & 1)
 .loopstart:
 cmp  cx, 00010h     ;; i < 16;
 je  .loopend    ;; break if i >= 16		
