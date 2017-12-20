@@ -2,7 +2,7 @@
 
 Simple bootloader for x86 , it prints its own binary content (little endian) and halts 
 on text terminal using int 10h AH=e0 (teletype output)
-it also calls int 15 to emulate system pause for delay betwen two messages. 
+it also calls int 15 to emulate system pause for delay betwen two messages.
 I think this is valid Quine or not ?
 
 ## Installation
